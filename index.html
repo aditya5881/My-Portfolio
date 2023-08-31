@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@100&family=Poppins:ital,wght@0,600;0,700;1,400&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1d3041;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #213c53;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(142, 142, 215);
+            font-size: 1.03rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        main hr {
+            margin: 40px 70px;
+            border: 0;
+            background: #8b7c94;
+            height: 2px;
+        }
+
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 100px 0;
+        }
+
+        .firstSection>div {
+            //background-color: red;
+            width: 30%;
+            //margin: 80px 0;
+
+        }
+
+        .leftsection {
+            //background-color: red;
+            font-size: 3rem;
+            //margin: 70px 0;
+        }
+
+        .leftsection .button {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #413a41;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+            border-radius: 10px;
+            border: 2px solid #546d83;
+
+        }
+
+        .purple {
+            color: rgb(159, 132, 180);
+        }
+
+        .text-gray {
+            color: gray;
+            ;
+        }
+
+        #element {
+            color: rgb(159, 132, 180);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 38vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 3px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 30px;
+            width: 1px;
+            background-color: white;
+            margin: 0 8vw;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 32vh;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .thirdSection .box {
+            background: white;
+            width: 60vw;
+            height: 3px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical {
+            height: 30px;
+            width: 1px;
+            background-color: white;
+            margin: 0 8vw;
+        }
+
+        .fourthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 45vh;
+        }
+
+        .fourthSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .fourthSection .box {
+            background: white;
+            width: 40vw;
+            height: 3px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .fourthSection .vertical {
+            height: 15px;
+            width: 1px;
+            background-color: white;
+            margin: 0 8vw;
+        }
+        .fourthSection a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fourthSection  a:hover {
+            color: rgb(142, 142, 215);
+            font-size: 1.03rem;
+        }
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .footer-image-top {
+            width: 23px;
+            position: relative;
+            top: 6px;
+            left: -20px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 10px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 10px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #213c53;
+            height: 160px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 20px 100px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 120px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer li a:hover {
+            color: rgb(142, 142, 215);
+            font-size: 1.03rem;
+        }
+
+        /*@media screen and (max-width: 2000px) {
+          
+          .box{
+            flex-direction: column;
+          }
+          .vertical-title, .vertical-desc{
+            left:45px
+          }
+          .secondSection .vertical{
+            height: unset;
+          }
+          .secondSection.box{
+            width: 80vw;;
+          }
+          .thirdSection .vertical{
+            height: unset;
+          }
+          .thirdSection.box{
+            width: 40vw;;
+          }
+          .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .thirdSection{
+            max-width: 60vw;
+            margin: auto;
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .firstSection{
+            flex-direction: column-reverse;
+          }
+          nav{
+            flex-direction: column;
+          }
+          .leftsection{
+            width:100%; !important
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .rightsection{
+            width: 720px; !important
+            display: flex;
+            justify-content:center;
+          }
+          .rightsection img{
+            width:45vw;
+            margin-bottom: 70px;
+          }
+          .image-top{
+            top:40px;
+          }
+          body{
+            min-width: fit-content;
+          }
+        }*/
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="/">Services</a></li>-->
+                    <li><a href="#projects">Projects</a></li> 
+                    <li><a href="mailto:rajaditya321333@gmail.com">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- firstSection -->
+
+        <section class=" firstSection" id="home">
+            <div class="leftsection">
+                Hi, I am <span class="purple">Aditya</span>
+                <div> and I am a </div>
+                <span id="element"></span>
+                <a href="https://drive.google.com/file/d/1I4pAN_Nb4hnvBFqkbv_FhbsqF75jjdWT/view?usp=sharing"
+                    target="_blank">
+                    <div class="buttons">
+                        <button class="btn">
+                            Resume</button>
+                    </div>
+                </a>
+            </div>
+            <div class="rightsection">
+                <img src="D:\Study Material\Portfolio Website\IMG_20211126_212114.jpg" alt=""><!--put your own foto-->
+            </div>
+
+        </section>
+        <hr>
+
+        <!-- thirdSection -->
+
+        <section class="thirdSection" id="about">
+            <span class="text-gray">What I have studied so far</span>
+            <h1>Educational Background</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="cbse.png" alt=""><!--put html foto-->
+                    <div class="vertical-title">
+                        10th(2018)
+                    </div>
+                    <div class="vertical-desc">
+                        Usha Martin World School, Patna
+                    </div>
+                    <div class="vertical-desc">
+                        91.6%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="cbse.png" alt=""><!--put css own foto-->
+                    <div class="vertical-title">
+                        12th(2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Usha Martin World School, Patna
+                    </div>
+                    <div class="vertical-desc">
+                        91.4%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="iiit-r logo.jpg" alt=""><!--put javascipt foto-->
+                    <div class="vertical-title">
+                        B.Tech-CSE(2024)
+                    </div>
+                    <div class="vertical-desc">
+                        IIIT Ranchi
+                    </div>
+                    <div class="vertical-desc">
+                        9.10 CGPA
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- secondSection -->
+
+        <section class="secondSection" >
+            <span class="text-gray">What I have learnt so far</span>
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt=""><!--put html foto-->
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        I learnt HTML from freecodecamp.org on recommendations of my friends.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css.png" alt=""><!--put css own foto-->
+                    <div class="vertical-title">
+                        CSS Developer
+                    </div>
+                    <div class="vertical-desc">
+                        I learnt CSS from freecodecamp.org on recommendations of my friends.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js.png" alt=""><!--put javascipt foto-->
+                    <div class="vertical-title">
+                        JavaScript Developer
+                    </div>
+                    <div class="vertical-desc">
+                        I learnt Javascript from freecodecamp.org on recommendations of my friends.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="react.png" alt=""><!--put react foto-->
+                    <div class="vertical-title">
+                        React Developer
+                    </div>
+                    <div class="vertical-desc">
+                        I learnt React from freecodecamp.org on recommendations of my friends.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="sql.png" alt=""><!--put react foto-->
+                    <div class="vertical-title">
+                        SQL
+                    </div>
+                    <div class="vertical-desc">
+                        I learnt SQL from freecodecamp.org on recommendations of my friends.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fourthsection -->
+        <section class="fourthSection" id="projects">
+            <span class="text-gray">What I have developed so far</span>
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <!-- <img class="image-top" src="cbse.png" alt="">put html foto -->
+                    <div class="vertical-title">
+                        <a href="https://radify.netlify.app/" target="_blank">Radify-Music Player</a>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>
+                                Developed a music player using HTML,CSS, JavaScript.
+                            </li>
+                            <li>
+                                Ensured responsiveness across various devices for broader usability.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="vertical-desc">
+                        91.6%
+                    </div> -->
+                </div>
+                <div class="vertical">
+                    <!-- <img class="image-top" src="cbse.png" alt="">put html foto -->
+                    <div class="vertical-title">
+                        <a href="https://radiflix.netlify.app/" target="_blank">RadiFlix-Movie App</a>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>
+                                Developed a movie app using HTML,CSS, JavaScript, React, Redux, API.
+                            </li>
+                            <li>
+                                Successfully integrated movie data such as trailers, showtimes, and reviews from API call.
+                            </li>
+                            <li>
+                                Ensured responsiveness across various devices for broader usability.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="vertical-desc">
+                        91.6%
+                    </div> -->
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3> Raj's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><img class="footer-image-top" src="gmail.png" alt="">
+                        <a href="mailto:rajaditya321333@gmail.com">Email</a>
+                    </li>
+                    <li><img class="footer-image-top" src="github.png" alt="">
+                        <a href="https://github.com/aditya5881" target="_blank">Github</a>
+                    </li>
+                    <li><img class="footer-image-top" src="linkedin.png" alt="">
+                        <a href="https://www.linkedin.com/in/aditya--raj-/" target="_blank">Linked-In</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><img class="footer-image-top" src="gfg.png" alt="">
+                        <a href="https://auth.geeksforgeeks.org/user/raj0421/practice" target="_blank">GfG</a>
+                    </li>
+                    <li><img class="footer-image-top" src="leetcode.png" alt="">
+                        <a href="https://leetcode.com/raj0421/" target="_blank">Leetcode</a>
+                    </li>
+                    <li><img class="footer-image-top" src="codechef.png" alt="">
+                        <a href="https://www.codechef.com/users/aditya_5881" target="_blank">CodeChef</a>
+                    </li>
+                </ul>
+            </div>
+            <!--put javascipt foto<div class="footer-fourth"></div>-->
+        </div>
+        <div class="footer-rights">
+            Copyright &#169 2023 https://adirajportfolio.netlify.app/ | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
